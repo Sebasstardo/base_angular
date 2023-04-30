@@ -1,0 +1,10 @@
+<h1>Pagina Principal de Personajes</h1>
+<hr />
+<div class="row">
+  <div class="col">
+   <app-form-dbz (onNewCharacterHijo)="dbzService.onNewCharacterPadre($event)"></app-form-dbz>
+  </div>
+  <div class="col">
+   <app-list-dbz [characterList]="dbzService.characters"></app-list-dbz>
+  </div>
+</div>
